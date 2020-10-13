@@ -1,0 +1,11 @@
+{
+  "name": "MidiPresets",
+  "version": "0.0.1",
+  "authors": {
+    "name": "Luca Limardo",
+    "email": "luca.limardo@gmail.com"
+  },
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "teensy40"
+}

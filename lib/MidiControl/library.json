@@ -1,0 +1,14 @@
+{
+  "name": "MidiControl",
+  "version": "0.0.1",
+  "authors": {
+    "name": "Luca Limardo",
+    "email": "luca.limardo@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "thomasfredericks/Bounce2": "2.55"
+  },
+  "frameworks": "arduino",
+  "platforms": "teensy40"
+}
