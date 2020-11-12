@@ -5,11 +5,11 @@
 #include <MidiControl.h>
 
 void MidiControlSwitchNote::play() {
-    usbMIDI.sendNoteOn(_note, 127, MIDI_CONTROL_CHANNEL);
+    // usbMIDI.sendNoteOn(_note, 127, MIDI_CONTROL_CHANNEL);
 }
 
 void MidiControlSwitchNote::stop() {
-    usbMIDI.sendNoteOff(_note, 0, MIDI_CONTROL_CHANNEL);
+    // usbMIDI.sendNoteOff(_note, 0, MIDI_CONTROL_CHANNEL);
 }
 
 MidiControlSwitchNote::MidiControlSwitchNote(int button, int led, int note) :
@@ -17,7 +17,7 @@ MidiControlSwitchNote::MidiControlSwitchNote(int button, int led, int note) :
 }
 
 void MidiControlSwitchCC::play() {
-    usbMIDI.sendControlChange(_note, 127, MIDI_CONTROL_CHANNEL);
+    // usbMIDI.sendControlChange(_note, 127, MIDI_CONTROL_CHANNEL);
 }
 
 void MidiControlSwitchCC::stop() {}

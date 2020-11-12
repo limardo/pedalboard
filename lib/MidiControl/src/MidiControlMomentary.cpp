@@ -40,11 +40,11 @@ MidiControlMomentaryNote::MidiControlMomentaryNote(int button, int led, int note
 }
 
 void MidiControlMomentaryNote::play() {
-    usbMIDI.sendNoteOn(_note, 127, MIDI_CONTROL_CHANNEL);
+    // usbMIDI.sendNoteOn(_note, 127, MIDI_CONTROL_CHANNEL);
 }
 
 void MidiControlMomentaryNote::stop() {
-    usbMIDI.sendNoteOff(_note, 0, MIDI_CONTROL_CHANNEL);
+    // usbMIDI.sendNoteOff(_note, 0, MIDI_CONTROL_CHANNEL);
 }
 
 MidiControlMomentaryCC::MidiControlMomentaryCC(int button, int led, int note) :
@@ -52,7 +52,7 @@ MidiControlMomentaryCC::MidiControlMomentaryCC(int button, int led, int note) :
 }
 
 void MidiControlMomentaryCC::play() {
-    usbMIDI.sendControlChange(_note, 127, MIDI_CONTROL_CHANNEL);
+    // usbMIDI.sendControlChange(_note, 127, MIDI_CONTROL_CHANNEL);
 }
 
 void MidiControlMomentaryCC::stop() {
@@ -63,9 +63,9 @@ MidiControlMomentaryKey::MidiControlMomentaryKey(int button, int led, int note) 
 }
 
 void MidiControlMomentaryKey::play() {
-    // Keyboard.press(_note);
+    Keyboard.press(_note);
 }
 
 void MidiControlMomentaryKey::stop() {
-    // Keyboard.release(_note);
+    Keyboard.release(_note);
 }

@@ -3,9 +3,9 @@
 PresetManager presets;
 
 void setup() {
-    presets.rigKontrol.setup();
+    presets.keyboard.setup();
 }
 
 void loop() {
-    presets.rigKontrol.loop();
+    presets.keyboard.loop();
 }
