@@ -3,9 +3,9 @@
 PresetManager presets;
 
 void setup() {
-    presets.keyboard.setup();
+    presets.rocksmith.setup();
 }
 
 void loop() {
-    presets.keyboard.loop();
+    presets.rocksmith.loop();
 }

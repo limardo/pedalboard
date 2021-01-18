@@ -88,6 +88,29 @@ public:
     void loop() override;
 };
 
+class PresetRocksmith : public MidiPresets {
+private:
+    MidiControlMomentaryKey control1;
+    MidiControlMomentaryKey control2;
+    MidiControlMomentaryKey control3;
+    MidiControlMomentaryKey control4;
+    MidiControlMomentaryKey control5;
+
+    MidiControlMomentaryKey control6;
+    MidiControlMomentaryKey control7;
+    MidiControlMomentaryKey control8;
+    MidiControlMomentaryKey control9;
+    MidiControlMomentaryKey control10;
+public:
+    PresetRocksmith();
+
+    void startup() override;
+
+    void setup() override;
+
+    void loop() override;
+};
+
 class PresetManager : public MidiPresets {
 public:
     PresetKeyboard keyboard;
@@ -95,6 +118,8 @@ public:
     PresetCustom1 custom1;
 
     PresetRigKontrol rigKontrol;
+
+    PresetRocksmith rocksmith;
 };
 
 #endif //PEDALBOARD_MIDIPRESETS_H
